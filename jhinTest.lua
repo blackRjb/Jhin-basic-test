@@ -14,10 +14,10 @@ local target = GetCurrentTarget()
     CastTargetSpell(target, _Q)
   end
   if mainMenu.Combo.useW:Value() and CanUseSpell(myHero,_W) == READY and ValidTarget(target, 3000) then
-    CastTargetSpell(target,_W)
+    CastW(target)
   end
   if mainMenu.Combo.useE:Value() and CanUseSpell(myHero,_E) == READY and ValidTarget(target, 750) then
-    CastTargetSpell(target,_E)
+    CastTE(target)
   end
  end
 end)
