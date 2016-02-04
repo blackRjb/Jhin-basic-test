@@ -4,6 +4,7 @@ local mainMenu = Menu("Jhin v1.0", "Jhin")
 mainMenu:Menu("Combo", "Combo")
 mainMenu.Combo:Boolean("useQ", "Use Q", true)
 mainMenu.Combo:Boolean("useW", "Use W", true)
+mainMenu.Combo:Boolean("useE", "Use E", true)
 mainMenu.Combo:Key("Combo1", "Combo", string.byte(" "))
 
 OnTick(function(myHero) 
