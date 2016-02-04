@@ -17,7 +17,7 @@ local target = GetCurrentTarget()
     CastW(target)
   end
   if mainMenu.Combo.useE:Value() and CanUseSpell(myHero,_E) == READY and ValidTarget(target, 750) then
-    CastTE(target)
+    CastE(target)
   end
  end
 end)
