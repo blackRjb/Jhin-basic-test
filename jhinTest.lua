@@ -1,5 +1,4 @@
 if GetObjectName(myHero) ~= "Jhin" then return end
-local target = GetCurrentTarget()
 require('Inspired')
 local mainMenu = Menu("Jhin v1.0", "Jhin")
 mainMenu:Menu("Combo", "Combo")
