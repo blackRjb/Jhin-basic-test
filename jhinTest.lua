@@ -12,5 +12,11 @@ local target = GetCurrentTarget()
   if mainMenu.Combo.useQ:Value() and CanUseSpell(myHero,_Q) == READY and ValidTarget(target, 550) then
     CastTargetSpell(target, _Q)
   end
+  if mainMenu.Combo.useW:Value() and CanUseSpell(myHero,_W) == READY and ValidTarget(target, 3000) then
+   CastTargetSpell(target,_W)
+  end
+  if mainMenu.Combo.useE:Value() and CanUseSpell(myHero,_E) == READY and ValidTarget(target, 750) then
+   CastTargetSpell(target,_E)
+  end
  end
 end)
