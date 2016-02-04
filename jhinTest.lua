@@ -14,4 +14,5 @@ if mainMenu.Combo.Combo1:Value() then
 if mainMenu.Combo.useQ:Value() and CanUseSpell(myHero,_Q) == READY and ValidTarget(target, 550) then
 CastTargetSpell(target, _Q)
 end
+end
 end)
